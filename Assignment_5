@@ -1,0 +1,147 @@
+# 1
+
+energy = 0
+
+
+def start_washing():
+    def pump_water():
+        global energy
+
+        energy = 5
+
+        print("pumping water -> 10 minutes")
+
+        print(energy)
+
+    pump_water()
+
+    def spin():
+        energy = 20
+
+        print("spinning -> 5 minutes")
+
+        print(energy)
+
+    spin()
+
+    def heat_water():
+        energy = 1320
+
+        print("heating water -> 20 minutes")
+
+        print(energy)
+
+    heat_water()
+
+    def rinse():
+        energy = 1400
+
+        print("rinsing -> 15 minutes")
+
+        print(energy)
+
+    rinse()
+
+    def second_spin():
+        energy = 1900
+
+        print("spinning -> 40 minutes")
+
+        print(energy)
+
+    second_spin()
+
+
+start_washing()
+
+# 2
+
+energy = 0
+
+time = 0
+
+program = str(input("eco mode or normal mode ->"))
+
+
+def start_washing():
+    def pump_water():
+        global energy
+
+        global time
+
+        time = 10
+
+        if program == "eco mode":
+            energy = 5
+
+        else:
+            energy = 5
+
+        print("pumping water -> 10 minutes")
+
+        print(energy, time)
+
+    pump_water()
+
+    def spin():
+        time = 15
+
+        if program == "eco mode":
+            energy = 20
+
+        else:
+            energy = 20
+
+        print("spinning -> 5 minutes")
+
+        print(energy, time)
+
+    spin()
+
+    def heat_water():
+        time = 35
+
+        if program == "eco mode":
+            energy = 920
+
+        else:
+            energy = 1320
+
+        print("heating water -> 20 minutes")
+
+        print(energy, time)
+
+    heat_water()
+
+    def rinse():
+        time = 50
+
+        if program == "eco mode":
+            energy = 960
+
+        else:
+            energy = 1400
+
+        print("rinsing -> 15 minutes")
+
+        print(energy, time)
+
+    rinse()
+
+    def second_spin():
+        time = 90
+
+        if program == "eco mode":
+            energy = 1760
+
+        else:
+            energy = 1900
+
+        print("spinning -> 40 minutes")
+
+        print(energy, time)
+
+    second_spin()
+
+
+start_washing()

@@ -1,0 +1,41 @@
+# 1 length of a string
+
+length = str(input("whats the capital of Ghana -> "))
+
+print(len(length))
+
+# 2 repetition
+
+repeat = str(input("Say this again -> "))
+
+repeat_ = repeat * 3
+
+print(repeat_)
+
+# 3 comparison
+
+string1 = str(input("one-> "))
+
+string2 = str(input("two-> "))
+
+if string1 == string2:
+    print("Is ", string1, " equal to ", string2, "? Result: True")
+
+else:
+    print("Is ", string1, " equal to", string2, "? Result: False")
+
+# 4 longest word
+
+sentence = str(input("say any sentence: "))
+
+longest_word = max(sentence.split(), key=len)
+
+print(longest_word, "-", len(longest_word))
+
+# 5 replacement
+
+mango = str(input("What do you think about this mango? "))
+
+mango_new = mango.replace("bad", "good").replace("not", "")
+
+print(mango_new)
